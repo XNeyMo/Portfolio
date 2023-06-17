@@ -1,3 +1,10 @@
+/* ============== VARIABLES ============== */
+:root {
+    --colordark: #606C5D;
+    --colorinter: #F1C376;
+    --colorlight: #FFF4F4;
+}
+
 /* ============== RESET CSS ============== */
 * {
     box-sizing: border-box;
@@ -8,46 +15,4 @@
     color: var(--colorlight);
 }
 
-/* ============== VARIABLES ============== */
-:root {
-    --colordark: #2c3639;
-    --colorinter: #a27b5c;
-    --colorlight: #dcd7c9;
-}
-
 /* ============== HEADER AND HOME ============== */
-header {
-    height: 100vh;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-}
-
-header .home {
-    background-color: var(--colorinter);
-    flex: 1;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--colordark);
-    height: 10%;
-    padding: 1% 3%;
-}
-
-header nav .logo {
-    height: 48px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-header nav ul li a:hover {
-    color: var(--colorinter);
-    transition: .5s;
-}
