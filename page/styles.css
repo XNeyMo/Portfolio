@@ -208,7 +208,63 @@ section {
 
 /* ============== SKILL SECTION ============== */
 
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vh;
+}
 
+.skill-container-left {
+    width: 50%;
+    text-align: center;
+}
+
+.languages-grid {
+    padding: 3vh 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.language {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--colorlight);
+}
+
+.skill-container-right {
+    width: 50%;
+    text-align: center;
+}
+
+.fratech-grid {
+    padding: 3vh 5vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.fratech {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--colorlight);
+}
+
+.grid-subtitle {
+    color: var(--colorinter);
+}
 
 /* ============== PROJECT SECTION ============== */
 
