@@ -134,8 +134,8 @@ section {
 }
 
 .about-photo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 2px solid var(--colorlight);
     border-radius: 50%;
     margin-top: 4vh;
@@ -144,17 +144,16 @@ section {
 
 .about-name {
     color: var(--colorinter);
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
     font-size: 1.8rem;
 }
 
 .about-p {
     margin-bottom: 2vh;
-    font-size: 1.2rem;
 }
 
 .about-button {
-    margin-top: 4vh;
+    margin-top: 2vh;
     background-color: var(--colorinter);
     border: none;
     border: 2px solid var(--colorinter);
@@ -268,11 +267,221 @@ section {
 
 /* ============== PROJECT SECTION ============== */
 
+.project-container {
+    height: calc(100% - 4vh - 1.8rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.construction {
+    font-size: 5rem;
+}
 
 /* ============== CONTACT SECTION ============== */
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vh;
+}
 
+form,
+.social-networks {
+    width: 50%;
+    padding: 0 4vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-subtitle {
+    text-align: center;
+    margin: 4vh 0;
+}
+
+input,
+textarea,
+.submit {
+    background: var(--colordark);
+    border: var(--colorlight) 2px solid;
+    border-radius: 5px;
+}
+
+input, 
+.submit {
+    height: 6vh;
+}
+
+textarea {
+    height: 16vh;
+}
+
+.submit {
+    margin-top: 10vh;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--colorinter);
+    color: var(--colorinter);
+    padding-left: .94vw;
+}
+
+input:not(:focus), 
+textarea:not(:focus) {
+    padding-left: .94vw;
+    align-items: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--colorlight);
+}
+
+textarea:not(:focus)::placeholder {
+    padding-top: 1vh;
+}
+
+.submit {
+    margin-top: 4vh;
+    background-color: var(--colorinter);
+    border: none;
+    border: 2px solid var(--colorinter);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--colordark);
+    font-weight: 800;
+    transition: .5s;
+}
+
+.submit:hover {
+    background-color: var(--colordark);
+    color: var(--colorinter);
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.follow-projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-links > a,
+.follow-projects > a {
+    width: 170px;
+    height: 40px;
+    border: 2px solid var(--colorinter);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: var(--colorinter);
+    transition: .5s;
+}
+
+.contact-links > a > i,
+.follow-projects > a > i {
+    margin-right: .5rem;
+    color: var(--colorinter);
+    transition: .5s;
+}
+
+.contact-links > a:hover,
+.follow-projects > a:hover {
+    background-color: var(--colorinter);
+    color: var(--colordark);
+}
+
+.contact-links > a:hover > i,
+.follow-projects > a:hover > i {
+    background-color: var(--colorinter);
+    color: var(--colordark);
+}
 
 /* ============== FOOTER ============== */
+
+footer {
+    padding: 4vh 1.9vw;
+    border-top: 2px solid var(--colorinter);
+    background-color: #485246;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4vh;
+    background: #485246;
+}
+
+.footer-left {
+    width: 46.7vw;
+    background: #485246;
+}
+
+.footer-left h3,
+.footer-left p {
+    background: #485246;
+}
+
+.footer-center {
+    background: #485246;
+}
+
+.footer-center h3,
+.footer-center p,
+.footer-center p i {
+    background: #485246;
+}
+
+.footer-right,
+.footer-right h3,
+.footer-right div,
+.footer-right div a,
+.footer-right div a i {
+    background: #485246;
+}
+
+.footer-text {
+    margin-bottom: 2vh;
+    color: var(--colorinter);
+}
+
+.contact-icon {
+    margin-right: .94vw;
+    color: var(--colorinter);
+    width: 16px;
+    text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.social-icons a i {
+    transition: .5s;
+}
+
+.social-icons a:hover i {
+    color: var(--colorinter);
+}
+
+.footer-bottom p {
+    background: #485246;
+}
+
+/* ============== RESPONSIVE ============== */
 
