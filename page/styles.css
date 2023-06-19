@@ -335,6 +335,10 @@ textarea:focus {
     padding-left: .94vw;
 }
 
+textarea:focus {
+    padding-top: 1.4vh;
+}
+
 input:not(:focus), 
 textarea:not(:focus) {
     padding-left: .94vw;
