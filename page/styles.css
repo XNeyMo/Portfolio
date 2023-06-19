@@ -320,6 +320,7 @@ input,
 
 textarea {
     height: 16vh;
+    resize: none;
 }
 
 .submit {
