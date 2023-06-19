@@ -472,7 +472,9 @@ footer {
 }
 
 .social-icons {
+    display: flex;
     text-align: center;
+    justify-content: space-evenly;
     font-size: 1.2rem;
 }
 
