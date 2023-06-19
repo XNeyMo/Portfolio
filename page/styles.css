@@ -13,6 +13,7 @@
     text-decoration: none;
     background-color: var(--colordark);
     color: var(--colorlight);
+    font-family: 'Lora', serif;
 }
 
 /* ============== HEADER AND HOME ============== */
@@ -37,6 +38,11 @@ header {
 }
 
 .home-span-input {
+    color: var(--colorinter);
+}
+
+.home-span-text {
+    font-family: 'Pacifico', cursive;
     color: var(--colorinter);
 }
 
@@ -84,3 +90,50 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     color: var(--colorinter);
 }
+
+.main-nav-scrolled {
+    position: fixed;
+    top: 0;
+    padding: 1vh 6vw 1vh 0;
+}
+
+/* ============== SECTION CONFIGURATION ============== */
+
+section {
+    height: 100vh;
+    padding: 4vh 3vw;
+}
+
+.section-scrolled {
+    padding: calc(2vh + 50px) 3vw 0 3vw;
+}
+
+.right {
+    text-align: right;
+}
+
+.left,
+.right {
+    color: var(--colorinter);
+    font-size: 1.8rem;
+    margin: 2vh auto;
+}
+
+/* ============== ABOUT SECTION ============== */
+
+
+
+/* ============== SKILL SECTION ============== */
+
+
+
+/* ============== PROJECT SECTION ============== */
+
+
+
+/* ============== CONTACT SECTION ============== */
+
+
+
+/* ============== FOOTER ============== */
+
