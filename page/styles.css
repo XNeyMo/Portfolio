@@ -21,6 +21,7 @@
 header {
     height: 100vh;
     padding: 4vh 3vw;
+    background-color: var(--colordark);
 }
 
 #home {
@@ -52,8 +53,8 @@ header {
     border: none;
     border: 2px solid var(--colorinter);
     border-radius: 20px;
-    width: 13vw;
-    height: 6vh;
+    width: 180px;
+    height: 50px;
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--colordark);
@@ -158,8 +159,8 @@ section {
     border: none;
     border: 2px solid var(--colorinter);
     border-radius: 20px;
-    width: 13vw;
-    height: 6vh;
+    width: 180px;
+    height: 50px;
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--colordark);
@@ -492,3 +493,125 @@ footer {
 
 /* ============== RESPONSIVE ============== */
 
+@media (max-width: 1174px) {
+    section {
+        width: auto;
+        height: auto;
+    }
+
+    .skill-container {
+        display: block;
+        text-align: center;
+    }
+
+    .skill-container-left,
+    .skill-container-right {
+        width: 100%;
+    }
+
+    .skill-container-right {
+        padding-top: 8vh;
+    }
+
+    .fratech-grid,
+    .languages-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1010px) {
+    .about-container,
+    .contact-container {
+        display: block;
+    }
+
+    .about-container-left,
+    .about-container-right,
+    form,
+    .social-networks {
+        width: 100%;
+    }
+
+    .about-container-left {
+        padding-right: 0;
+    }
+
+    .follow-projects,
+    .contact-links {
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 746px) {
+    footer {
+        text-align: center;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-text {
+        padding: 2vh 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 598px) {
+    .home-p {
+        font-size: 1rem;
+    }
+
+    .home-name {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .construction {
+        font-size: 3rem;
+    }
+
+    .languages-grid {
+        grid-template-columns: auto auto;
+    }
+
+    .about-grid {
+        grid-template-columns: auto;
+    }
+
+    .language,
+    .fratech {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .grid-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .contact-links,
+    .follow-projects {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
