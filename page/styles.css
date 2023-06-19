@@ -105,7 +105,7 @@ section {
 }
 
 .section-scrolled {
-    padding: calc(2vh + 50px) 3vw 0 3vw;
+    padding: calc(2vh + 50px) 3vw 8vh 3vw;
 }
 
 .right {
@@ -116,12 +116,95 @@ section {
 .right {
     color: var(--colorinter);
     font-size: 1.8rem;
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 
 /* ============== ABOUT SECTION ============== */
 
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.about-container-left {
+    width: 50%;
+    padding-right: 2vw;
+    text-align: center;
+}
+
+.about-photo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--colorlight);
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.about-name {
+    color: var(--colorinter);
+    margin-bottom: 4vh;
+    font-size: 1.8rem;
+}
+
+.about-p {
+    margin-bottom: 2vh;
+    font-size: 1.2rem;
+}
+
+.about-button {
+    margin-top: 4vh;
+    background-color: var(--colorinter);
+    border: none;
+    border: 2px solid var(--colorinter);
+    border-radius: 20px;
+    width: 13vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--colordark);
+    font-weight: 800;
+    transition: .5s;
+}
+
+.about-button:hover{
+    background-color: var(--colordark);
+    color: var(--colorinter);
+}
+
+.about-container-right {
+    width: 50%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.more-information {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--colorlight);
+}
+
+.about-subtitle {
+    color: var(--colorinter);
+    font-size: 2rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+}
 
 /* ============== SKILL SECTION ============== */
 
