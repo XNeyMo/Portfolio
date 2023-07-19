@@ -31,24 +31,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
         <!-- Header -->
         <header>
-            <!-- Home -->
-            <div id="home">
-                <p class="home-p">Hi There!</p>
-                <h1 class="home-name">I Am <span class="home-span-input"></span></h1>
-
-                <p class="home-p">Web and Software Developer</p>
-                <p class="home-p">Specialized in the <span class="home-span-text">Front-End</span></p>
-
-                <a href="#about"><button class="home-button">More About Me</button></a>
-            </div>
-
             <!-- Navegation -->
-            <nav class="main-nav">
+            <nav class="nav">
                 <div class="logo">
                     <img src="imgs/light.png" alt="XNeyMo's Logo">
                 </div>
@@ -62,161 +54,190 @@
             </nav>
         </header>
 
-        <!-- About Section -->
-        <section id="about">
-            <h1 class="about-title right">About Me</h1>
+        <!-- Main -->
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <p class="home-p">Hi There!</p>
+                <h1 class="home-name">I Am <span class="home-span-input"></span></h1>
 
-            <div class="about-container">
-                <div class="about-container-left">
-                    <img src="https://i.ibb.co/340jB8p/Dise-o-sin-t-tulo.png" alt="Neyan's Photo" class="about-photo">
+                <p class="home-p">Web Developer</p>
+                <p class="home-p">Specialized in the <span class="home-span-text">Front-End</span></p>
 
-                    <h2 class="about-name">Neyan Montes</h2>
-                    <p class="about-p">I am a double program student of Systems and Computing Engineering and Mechatronics Engineering from the Universidad Tecnológica de Bolívar.</p>
-                    <p class="about-p">Additionally, I am a fundamental part of the front-end development in a project that I carry out with a group of students from the same university for the development of software, pages and web applications.</p>
+                <a href="#about"><button class="home-button">More About Me</button></a>
+            </section>
 
-                    <a href="#contact"><button class="about-button">Contact Me</button></a>
-                </div>
+            <!-- About Section -->
+            <section id="about">
+                <h1 class="about-title title-right">About Me</h1>
 
-                <div class="about-container-right">
-                    <div class="about-grid">
-                        <div class="more-information">
-                            <h2 class="about-subtitle">14+</h2>
-                            <p class="about-text">Certifications</p>
-                        </div>
+                <div class="about-container">
+                    <div class="about-container-left">
+                        <img src="https://i.ibb.co/340jB8p/Dise-o-sin-t-tulo.png" alt="Neyan's Photo" class="about-photo">
 
-                        <div class="more-information">
-                            <h2 class="about-subtitle">1+</h2>
-                            <p class="about-text">Experience</p>
-                        </div>
+                        <h2 class="about-name">Neyan Montes</h2>
+                        <p class="about-p">I am a double program student of Systems and Computing Engineering and Mechatronics Engineering from the Universidad Tecnológica de Bolívar.</p>
+                        <p class="about-p">Additionally, I am a fundamental part of the front-end development in a project that I carry out with a group of students from the same university for the development of software, pages and web applications.</p>
 
-                        <div class="more-information">
-                            <h2 class="about-subtitle">6+</h2>
-                            <p class="about-text">Programming</p>
-                            <p class="about-text">Languages</p>
-                        </div>
+                        <a href="#contact"><button class="about-button">Contact Me</button></a>
+                    </div>
 
-                        <div class="more-information">
-                            <h2 class="about-subtitle">2+</h2>
-                            <p class="about-text">Frameworks and</p>
-                            <p class="about-text">Technologies</p>
+                    <div class="about-container-right">
+                        <div class="about-grid">
+                            <div class="more-information">
+                                <h2 class="about-subtitle">14+</h2>
+                                <p class="about-text">Certifications</p>
+                            </div>
+
+                            <div class="more-information">
+                                <h2 class="about-subtitle">1+</h2>
+                                <p class="about-text">Year's</p>
+                                <p class="about-text">Experience</p>
+                            </div>
+
+                            <div class="more-information">
+                                <h2 class="about-subtitle">6+</h2>
+                                <p class="about-text">Programming</p>
+                                <p class="about-text">Languages</p>
+                            </div>
+
+                            <div class="more-information">
+                                <h2 class="about-subtitle">3+</h2>
+                                <p class="about-text">Frameworks and</p>
+                                <p class="about-text">Technologies</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Skill Section -->
-        <section id="skill">
-            <h1 class="skill-title left">My Skills</h1>
+            <!-- Skill Section -->
+            <section id="skill">
+                <h1 class="skill-title title-left">My Skills</h1>
 
-            <div class="skill-container">
-                <div class="skill-container-left">
+                <div class="skill-container-prolan">
                     <h2 class="skill-subtitle">Programing Languages</h2>
 
-                    <div class="languages-grid">
-                        <div class="language">
-                            <h2 class="grid-subtitle">Python</h2>
+                    <div class="languages-carrousel">
+                        <ul class="lancar-screens">
+                            <li id="lacasc1">
+                                <p class="shtml carrousel-subtitle">HTML</p>
+                            </li>
 
-                        </div>
+                            <li id="lacasc2" class="left">
+                                <p class="scss carrousel-subtitle">CSS</p>
+                            </li>
 
-                        <div class="language">
-                            <h2 class="grid-subtitle">C++</h2>
-                            
-                        </div>
+                            <li id="lacasc3" class="active">
+                                <p class="sjs carrousel-subtitle">JavaScript</p>
+                            </li>
 
-                        <div class="language">
-                            <h2 class="grid-subtitle">Java</h2>
-                            
-                        </div>
+                            <li id="lacasc4" class="right">
+                                <p class="sjava carrousel-subtitle">Java</p>
+                            </li>
 
-                        <div class="language">
-                            <h2 class="grid-subtitle">HTML</h2>
-                            
-                        </div>
+                            <li id="lacasc5">
+                                <p class="scpp carrousel-subtitle">C++</p>
+                            </li>
 
-                        <div class="language">
-                            <h2 class="grid-subtitle">CSS</h2>
-                            
-                        </div>
+                            <li id="lacasc6">
+                                <p class="spython carrousel-subtitle">Python</p>
+                            </li>
+                        </ul>
 
-                        <div class="language">
-                            <h2 class="grid-subtitle">JavaScript</h2>
-                            
-                        </div>
+                        <div class="pagination"></div>
                     </div>
                 </div>
 
-                <div class="skill-container-right">
+                <div class="skill-container-fratech">
                     <h2 class="skill-subtitle">Framworks and Technologies</h2>
 
-                    <div class="fratech-grid">
-                        <div class="fratech">
-                            <h2 class="grid-subtitle">Bootstrap</h2>
+                    <div class="fratech-carrousel">
+                        <ul class="fracar-screens">
+                            <li id="fracasc1">
+                                <h2 class="sreact carrousel-subtitle">React</h2>
+                            </li>
 
+                            <li id="fracasc2" class="left">
+                                <h2 class="sboot carrousel-subtitle">Bootstrap</h2>
+                            </li>
+
+                            <li id="fracasc3" class="active">
+                                <h2 class="sgit carrousel-subtitle">Git</h2>
+                            </li>
+
+                            <li id="fracasc4" class="right">
+                                <h2 class="sgithub carrousel-subtitle">GitHub</h2>
+                            </li>
+                        </ul>
+
+                        <div class="pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Section -->
+            <section id="project">
+                <h1 class="project-title title-right">My Projects</h1>
+
+                <div class="project-carrousel">
+                    <ul class="project-screens">
+                        <li id="project1">
+                                
+                        </li>
+
+                        <li id="project2" class="left">
+                                
+                        </li>
+
+                        <li id="project3" class="active">
+                                
+                        </li>
+
+                        <li id="project4" class="right">
+                                
+                        </li>
+                    </ul>
+
+                    <div class="pagination"></div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h1 class="contact-title left">Contact Me</h1>
+
+                <div class="contact-container">
+                    <form action="">
+                        <h2 class="contact-subtitle">You can contact me by email by completing the following form</h2>
+
+                        <input type="text" name="username" id="username" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+
+                    <div class="social-networks">
+                        <h2 class="contact-subtitle">You can also contact me through the following social networks</h2>
+
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/neyanmontes/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="https://api.whatsapp.com/send?phone=573125897211" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                            <a href="mailto:neyanmontes611@gamil.com" target="_blank"><i class="fa-brands fa-google"></i> Gmail</a>
+                            <a href="https://stackoverflow.com/users/21853179/xneymo" target="_blank" rel="noopener"><i class="fa-brands fa-stack-overflow"></i> Stack Overflow</a>
                         </div>
 
-                        <div class="fratech">
-                            <h2 class="grid-subtitle">React</h2>
-                            
-                        </div>
+                        <h2 class="contact-subtitle">Or you can follow all my projects through the following links</h2>
 
-                        <div class="fratech">
-                            <h2 class="grid-subtitle">Git</h2>
-                            
-                        </div>
-
-                        <div class="fratech">
-                            <h2 class="grid-subtitle">GitHub</h2>
-                            
+                        <div class="follow-projects">
+                            <a href="https://github.com/XNeyMo" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#project"><i class="fa-solid fa-suitcase"></i> Portfolio</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Project Section -->
-        <section id="project">
-            <h1 class="project-title right">My Projects</h1>
-
-            <div class="project-container">
-                <p class="construction">Coming Soon ...</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h1 class="contact-title left">Contact Me</h1>
-
-            <div class="contact-container">
-                <form action="">
-                    <h2 class="contact-subtitle">You can contact me by email by completing the following form</h2>
-
-                    <input type="text" name="username" id="username" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
-
-                    <button type="submit" class="submit">Submit</button>
-                </form>
-
-                <div class="social-networks">
-                    <h2 class="contact-subtitle">You can also contact me through the following social networks</h2>
-
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/neyanmontes/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-                        <a href="https://api.whatsapp.com/send?phone=573125897211" target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
-                        <a href="mailto:neyanmontes611@gamil.com" target="_blank"><i class="fa-brands fa-google"></i> Gmail</a>
-                        <a href="https://stackoverflow.com/users/21853179/xneymo" target="_blank"><i class="fa-brands fa-stack-overflow"></i> Stack Overflow</a>
-                    </div>
-
-                    <h2 class="contact-subtitle">Or you can follow all my projects through the following links</h2>
-
-                    <div class="follow-projects">
-                        <a href="https://github.com/XNeyMo" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="#project"><i class="fa-solid fa-suitcase"></i> Portfolio</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer>
@@ -237,8 +258,8 @@
                     <h3 class="footer-text">Follow Me</h3>
                     
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/neyanmontes/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/XNeyMo" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/neyanmontes/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/XNeyMo" target="_blank" rel="noopener"z><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
