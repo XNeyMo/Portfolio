@@ -13,6 +13,7 @@
     text-decoration: none;
     color: var(--colorlight);
     font-family: 'Lora', serif;
+    scroll-behavior: smooth;
 }
 
 body {
