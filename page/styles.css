@@ -36,16 +36,26 @@ header {
         width: 100%;
 
         .logo > img {
-            width: 3.5vw;
-            height: 3.5vw;
+            width: 3.8vw;
+            height: 3.8vw;
         }
 
-        & > ul {
+        .rest {
             display: flex;
-            gap: 2rem;
+            align-items: center;
 
-            & > li {
-                & > a {
+            .fa {
+                display: none;
+                color: #366284;
+                font-size: 7vh;
+                margin-top: 3.75vh;
+            }
+            
+            & > ul {
+                display: flex;
+                gap: 2rem;
+
+                & > li > a{
                     font-size: 1.2vw;
                     transition: .5s;
 
@@ -61,7 +71,6 @@ header {
 /* ============== SECTION CONFIGURATION ============== */
 
 section {
-    height: 100vh;
     padding: 4vh 3vw;
     scroll-margin-top: calc(4vh + 1vw);
 
@@ -211,8 +220,6 @@ section {
 /* ============== SKILL SECTION ============== */
 
 #skill {
-    height: auto;
-
     .skill-subtitle {
         margin-bottom: 3vh;
     }
@@ -222,7 +229,7 @@ section {
 
         .languages-carrousel {
             width: 900px;
-            height: calc(600px - 150px);
+            height: 400px;
             margin: auto;
             font-size: 0;
             overflow: hidden;
@@ -237,7 +244,7 @@ section {
                 width: 100%;
                 height: 100%;
                 width: 900px;
-                height: 600px;
+                height: 506px;
                 position: relative;
                 transform: translate(0%, -30%);
                 
@@ -382,7 +389,7 @@ section {
 
         .fratech-carrousel {
             width: 900px;
-            height: calc(600px - 150px);
+            height: 400px;
             margin: auto;
             font-size: 0;
             overflow: hidden;
@@ -397,7 +404,7 @@ section {
                 width: 100%;
                 height: 100%;
                 width: 900px;
-                height: 600px;
+                height: 506px;
                 position: relative;
                 transform: translate(0%, -30%);
                 
@@ -519,142 +526,144 @@ section {
 
 /* ============== PROJECT SECTION ============== */
 
-.project-title {
-    padding-bottom: 3vh;
-}
-
-.project-carrousel {
-    width: 900px;
-    height: calc(600px - 150px);
-    margin: auto;
-    font-size: 0;
-    overflow: hidden;
-    font-size: 0;
-    position: relative;
-    text-align: left;
-
-    .project-screens {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        width: 900px;
-        height: 600px;
-        position: relative;
-        transform: translate(0%, -30%);
-        
-        
-        & > li {
-            width: 0%;
-            height: 100%;
-            width: 50%;
-            height: 50%;
-            display: inline-block;
-            font-size: 15px;
-            overflow: hidden;
-            background: #bbb;
-            border-radius: 10px;
-            opacity: 0;
-            filter: blur(5px);
-            cursor: pointer;
-            position: absolute;
-            bottom: 0;
-            transform: translate(50%, 0);
-            transition: all .7s;
-            pointer-events: none;
-            
-            &:hover {filter: none; opacity: 1;}
-            &.active {
-                opacity: 1;
-                filter: none;
-                width: 70%;
-                height: 70%;
-                z-index: 100;
-                transform: none;
-                transform: translate(20%,0);
-            }
-            &.active, &.left, &.right {pointer-events: all;}
-            &.left, &.right {transform: translate(0%, 0); opacity: .5;}
-            &.left {transform: translate(0%, 0);}
-            &.right {transform: translate(100%, 0);}
-
-            .carrousel-subtitle {
-                width: 50%;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                display: flex;
-                height: 100%;
-                font-size: 3rem;
-                pointer-events: none;
-            }
-        }
+#project {
+    .project-title {
+        padding-bottom: 3vh;
     }
     
-    .pagination {
-        list-style: none;
-        padding: 5px;
-        text-align: center;
-        position: absolute;
-        bottom: 0; left: 0; right: 0;
-
-        & > li {
-            display: inline-block;
-            vertical-align: middle;
-            width: 10px;
-            height: 10px;
-            margin: 5px;
-            opacity: .3;
-            cursor: pointer;
-            background: #eee;
-            border-radius: 100%;
-            transition: all .2s;
+    .project-carrousel {
+        width: 900px;
+        height: 400px;
+        margin: auto;
+        font-size: 0;
+        overflow: hidden;
+        font-size: 0;
+        position: relative;
+        text-align: left;
+    
+        .project-screens {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            width: 900px;
+            height: 506px;
+            position: relative;
+            transform: translate(0%, -30%);
+            
+            
+            & > li {
+                width: 0%;
+                height: 100%;
+                width: 50%;
+                height: 50%;
+                display: inline-block;
+                font-size: 15px;
+                overflow: hidden;
+                background: #bbb;
+                border-radius: 10px;
+                opacity: 0;
+                filter: blur(5px);
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+                transform: translate(50%, 0);
+                transition: all .7s;
+                pointer-events: none;
+                
+                &:hover {filter: none; opacity: 1;}
+                &.active {
+                    opacity: 1;
+                    filter: none;
+                    width: 70%;
+                    height: 70%;
+                    z-index: 100;
+                    transform: none;
+                    transform: translate(20%,0);
+                }
+                &.active, &.left, &.right {pointer-events: all;}
+                &.left, &.right {transform: translate(0%, 0); opacity: .5;}
+                &.left {transform: translate(0%, 0);}
+                &.right {transform: translate(100%, 0);}
+    
+                .carrousel-subtitle {
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    display: flex;
+                    height: 100%;
+                    font-size: 3rem;
+                    pointer-events: none;
+                }
+            }
+        }
+        
+        .pagination {
+            list-style: none;
+            padding: 5px;
+            text-align: center;
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+    
+            & > li {
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                opacity: .3;
+                cursor: pointer;
+                background: #eee;
+                border-radius: 100%;
+                transition: all .2s;
+                background-size: cover;
+                background-position: center;
+                
+                &:hover, &.active {opacity: 1;}
+            }
+        }
+    
+        #project1 {
+            background-image: url();
             background-size: cover;
             background-position: center;
-            
-            &:hover, &.active {opacity: 1;}
         }
-    }
-
-    #project1 {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-    }
-
-    .sp1 {
-        color: #eee;
-    }
     
-    #project2 {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-    }
-
-    .sp2 {
-        color: #eee;
-    }
+        .sp1 {
+            color: #eee;
+        }
+        
+        #project2 {
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+        }
     
-    #project3 {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-    }
-
-    .sp3 {
-        color: #eee;
-    }
+        .sp2 {
+            color: #eee;
+        }
+        
+        #project3 {
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+        }
     
-    #project4 {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-    }
-
-    .sp4 {
-        color: #eee;
+        .sp3 {
+            color: #eee;
+        }
+        
+        #project4 {
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .sp4 {
+            color: #eee;
+        }
     }
 }
 
@@ -852,4 +861,164 @@ footer {
             }
         }
     }
+}
+
+/* ============== RESPONSIVE ============== */
+@media (max-width: 1366px) {
+    header nav {
+        .logo > img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .rest > ul > li > a {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 958px) {
+    #about {
+        .about-container {
+            display: block;
+
+            .about-container-left,
+            .about-container-right {
+                width: 100%;
+
+                .about-grid {
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+
+    #skill {
+        .skill-container-prolan {
+            .languages-carrousel {
+                width: 650px;
+                height: 400px;
+    
+                .lancar-screens {
+                    width: 650px;
+                    height: 365px;
+                }
+            }
+        }
+
+        .skill-container-fratech {
+            .fratech-carrousel {
+                width: 650px;
+                height: 400px;
+
+                .fracar-screens {
+                    width: 650px;
+                    height: 365px;
+                }
+            }
+        } 
+    }
+
+    #project {
+        .project-carrousel {
+            width: 650px;
+            height: 400px;
+    
+            .project-screens {
+                width: 650px;
+                height: 365px;
+            }
+        }
+    }
+
+    #contact {
+        .contact-container {
+            display: block;
+
+            & > form,
+            .social-networks {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 814px) {
+    #home {
+        padding-top: 40vh;
+        .home-p {
+            font-size: 1.5rem;
+        }
+
+        .home-name {
+            font-size: 2.5rem;
+            padding: 4vh 2vw;
+        }
+    }
+
+    footer {
+        .footer-container {
+            display: block;
+
+            .footer-left {
+                width: 100%;
+                padding-bottom: 1rem;
+            }
+
+            .footer-center {
+                padding-bottom: 1rem;
+            }
+
+            .footer-right {
+                .social-icons {
+                    justify-content: start;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 707px) {
+    #skill {
+        .skill-container-prolan {
+            .languages-carrousel {
+                width: 500px;
+                height: 300px;
+    
+                .lancar-screens {
+                    width: 500px;
+                    height: 281px;
+                }
+            }
+        }
+
+        .skill-container-fratech {
+            .fratech-carrousel {
+                width: 500px;
+                height: 300px;
+
+                .fracar-screens {
+                    width: 500px;
+                    height: 281px;
+                }
+            }
+        } 
+    }
+
+    #project {
+        .project-carrousel {
+            width: 500px;
+            height: 300px;
+    
+            .project-screens {
+                width: 500px;
+                height: 281px;
+            }
+        }
+    }
+}
+
+@media (max-width: 623px) {
+    
 }
