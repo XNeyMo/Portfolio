@@ -16,7 +16,7 @@ This is the first project officially for my advancement and specialization in fr
 
 ## Overview
 
-### The Challenge
+### The challenge
 
 - Implement the UX/UI design to offer better quality to users
 - Use the image carousel
