@@ -4,3 +4,15 @@ const typed = new Typed(".phrases", {
     backSpeed: 60,
     loop: true,
 })
+
+function openKnowledge(knowledge) {
+    var i;
+
+    var x = document.getElementsByClassName("knowledge");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    
+    document.getElementById(knowledge).style.display = "block";
+}
