@@ -1,0 +1,25 @@
+/* =============== GLOBAL VARIABLES =============== */
+:root {
+    --darkcolor: #121212;
+    --intercolor: #fde68a;
+    --lightcolor: #f8f8f8;
+}
+
+/* =============== RESET CSS =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--lightcolor);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--darkcolor);
+}
