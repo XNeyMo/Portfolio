@@ -6,13 +6,16 @@ const typed = new Typed(".phrases", {
 })
 
 function openKnowledge(knowledge) {
-    var i;
-
-    var x = document.getElementsByClassName("knowledge");
-
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    var sections = document.getElementsByClassName("knowledge");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
     }
-    
-    document.getElementById(knowledge).style.display = "block";
+
+    var buttons = document.getElementsByTagName("button");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("actived");
+    }
+
+    document.getElementById(knowledge).style.display = "grid"; // Mostrar la sección seleccionada
+    document.querySelector(`button[onclick="openKnowledge('${knowledge}')"]`).classList.add("actived");
 }

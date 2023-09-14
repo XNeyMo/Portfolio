@@ -60,12 +60,16 @@
 
         <main>
             <section class="me">
-                <div>
-                    <h2>About Me</h2>
-                    <img src="" alt="">
+                <div class="text-img">
+                    <div>
+                        <h2>About Me</h2>
+                        <div class="line"></div>
+                    </div>
+                    
+                    <img src="https://i.pinimg.com/originals/2f/74/a4/2f74a4e88c2bca5e80fe9dc355ca161e.jpg" alt="">
                 </div>
 
-                <div>
+                <div class="text">
                     <p>
                         Hi there! My name is <span class="name">Neyan Montes</span>. I have 1 year of experience in front-end web development. I enjoy everything 
                         I'm doing right now because I don't consider it a job, but rather a way to demonstrate my art.
@@ -84,17 +88,67 @@
 
                 <nav>
                     <ul>
-                        <li><button onclick="openKnowledge('languages')">Programming Languages</button></li>
-                        <li><button onclick="openKnowledge('technologies')">Technologies</button></li>
+                        <li><button onclick="openKnowledge('languages')" class="actived">Programming Languages</button></li>
+                        <li><button onclick="openKnowledge('technologies')">Technologies & Frameworks</button></li>
                     </ul>
                 </nav>
 
                 <div id="languages" class="knowledge">
-                    <h2>Programming Languages</h2>
+                    <div class="kl">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="">
+
+                        <h3>HTML</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
+
+                        <h3>CSS</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png" alt="">
+
+                        <h3>JavaScript</h3>
+                    </div>
                 </div>
                   
-                <div id="technologies" class="knowledge" style="display:none">
-                    <h2>Technologies</h2>
+                <div id="technologies" class="knowledge">
+                    <div class="kl">
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="">
+
+                        <h3>ReactJS</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="">
+
+                        <h3>Bootstrap</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="">
+
+                        <h3>Tailwind</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
+
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png" alt="">
+
+                        <h3>GitHub</h3>
+                    </div>
+
+                    <div class="kl">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png" alt="">
+
+                        <h3>NPM</h3>
+                    </div>
                 </div>
             </section>
         </main>

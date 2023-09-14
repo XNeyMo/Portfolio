@@ -170,3 +170,121 @@ main {
     -moz-box-shadow: -1px 1px 119px 2px rgba(253,230,138,0.39);
     box-shadow: -1px 1px 119px 2px rgba(253,230,138,0.39);
 }
+
+/* =============== ABOUT PAGE =============== */
+
+.me {
+    height: calc(100vh - 8.6rem);
+    margin: 1rem 0;
+    background-color: #1e1e1f;
+    border: solid .2rem #282829;
+    border-radius: 2rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150vw;
+}
+
+.text-img div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-img div h2 {
+    font-size: 2.5rem;
+    width: 20rem;
+}
+
+.line {
+    height: 1px;
+    border-bottom: solid var(--intercolor);
+    margin: 0 1rem;
+}
+
+.text-img img {
+    width: 35rem;
+    border-radius: 50%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    text-indent: 4rem;
+    line-height: 2.5rem;
+    word-spacing: .2rem;
+}
+
+.skills {
+    padding: 6rem 4rem;
+    margin-bottom: 12rem;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.skills nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    background-color: var(--darkcolor);
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    color: #9ba2ae;
+    border-radius: 1rem;
+}
+
+button.actived {
+    background-color: #2a271e;
+    color: var(--intercolor);
+}
+
+.knowledge {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.kl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid .2rem var(--intercolor);
+    border-radius: .5rem;
+    width: 20rem;
+    height: 8rem;
+}
+
+.kl img {
+    width: 4rem;
+}
+
+.kl h3 {
+    font-size: 1.8rem;
+}
+
+#technologies {
+    display: none;
+}
