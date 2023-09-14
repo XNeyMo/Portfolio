@@ -254,7 +254,7 @@ button {
     border-radius: 1rem;
 }
 
-button.actived {
+button.active {
     background-color: #2a271e;
     color: var(--intercolor);
 }

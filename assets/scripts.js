@@ -13,9 +13,9 @@ function openKnowledge(knowledge) {
 
     var buttons = document.getElementsByTagName("button");
     for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove("actived");
+        buttons[i].classList.remove("active");
     }
 
-    document.getElementById(knowledge).style.display = "grid"; // Mostrar la sección seleccionada
-    document.querySelector(`button[onclick="openKnowledge('${knowledge}')"]`).classList.add("actived");
+    document.getElementById(knowledge).style.display = "grid";
+    document.querySelector(`button[onclick="openKnowledge('${knowledge}')"]`).classList.add("active");
 }
