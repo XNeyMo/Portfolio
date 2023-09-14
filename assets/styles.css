@@ -262,8 +262,8 @@ button.active {
 .knowledge {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -287,4 +287,88 @@ button.active {
 
 #technologies {
     display: none;
+}
+
+/* =============== PROJECTS PAGE =============== */
+
+.project {
+    padding-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.project h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.project p {
+    font-size: 1.8rem;
+    background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(253, 230, 138, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 4rem;
+}
+
+.projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(37rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-item {
+    padding: 2rem;
+    background-color: #1e1e1f;
+    border: solid .2rem #282829;
+    border-radius: .75rem;
+    width: 37rem;
+    height: 40rem;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: .75rem;
+}
+
+.project-item h3 {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.project-item p {
+    color: #b4b4b4;
+    font-size: 1.5rem;
+    text-align: start;
+    line-height: 2rem;
+    word-spacing: .2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.project-item h4 {
+    text-align: start;
+    font-size: 1.4rem;
+    color: var(--intercolor);
+}
+
+.project-item ul {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.project-item ul li a span {
+    font-size: .1rem;
+}
+
+.project-item ul li a i {
+    transition: .5s;
+}
+
+.project-item ul li a:hover i {
+    color: var(--intercolor);
 }
