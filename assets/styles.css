@@ -12,7 +12,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     color: var(--lightcolor);
 }
 
@@ -22,4 +22,87 @@ html {
 
 body {
     background-color: var(--darkcolor);
+}
+
+/* =============== HEADER =============== */
+
+header {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.4rem;
+}
+
+/* =============== LEFT =============== */
+
+.xneymo-logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+}
+
+.open-close {
+    color: var(--intercolor);
+}
+
+.xneymo-logo:hover .open-close {
+    color: var(--lightcolor);
+}
+
+.xneymo-logo:hover .logo-name {
+    color: var(--intercolor);
+}
+
+/* =============== MIDDLE =============== */
+
+.nav-link {
+    border-bottom: solid .5rem var(--intercolor);
+    border-top: solid .5rem var(--darkcolor);
+}
+
+.active {
+    color: var(--lightcolor);
+}
+
+header nav ul li a {
+    color: #333d4b;
+    transition: .5s;
+}
+
+header nav ul li:hover a {
+    color: #636976;
+}
+
+.nav-link:hover .active {
+    color: var(--lightcolor);
+}
+
+/* =============== RIGHT =============== */
+
+.github-brand {
+    align-items: center;
+}
+
+.github-brand svg path {
+    transition: .5s;
+}
+
+.github-brand span {
+    font-size: .1rem;
+}
+
+.github-brand:hover svg path {
+    fill: var(--intercolor);
 }
