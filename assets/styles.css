@@ -3,6 +3,8 @@
     --darkcolor: #121212;
     --intercolor: #fde68a;
     --lightcolor: #f8f8f8;
+    --darkgray: #1e1e1f;
+    --lightgray: #282829;
 }
 
 /* =============== RESET CSS =============== */
@@ -176,8 +178,8 @@ main {
 .me {
     height: calc(100vh - 8.6rem);
     margin: 1rem 0;
-    background-color: #1e1e1f;
-    border: solid .2rem #282829;
+    background-color: var(--darkgray);
+    border: solid .2rem var(--lightgray);
     border-radius: 2rem;
     padding: 4rem;
     display: flex;
@@ -322,8 +324,8 @@ button.active {
 
 .project-item {
     padding: 2rem;
-    background-color: #1e1e1f;
-    border: solid .2rem #282829;
+    background-color: var(--darkgray);
+    border: solid .2rem var(--lightgray);
     border-radius: .75rem;
     width: 37rem;
     height: 40rem;
@@ -372,4 +374,52 @@ button.active {
 
 .project-item ul li a:hover i {
     color: var(--intercolor);
+}
+
+/* =============== CONTACT PAGE =============== */
+
+.contact {
+    height: calc(100vh - 6.6rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact a {
+    width: 30rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgray);
+    border: solid .2rem var(--lightgray);
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.contact a:hover {
+    border: solid .2rem var(--intercolor);
+}
+
+.linkedin,
+.gmail,
+.upwork {
+    transition: .5s;
+}
+
+.contact a:hover .linkedin {
+    height: 120px;
+}
+
+.contact a:hover .gmail {
+    height: 150px;
+}
+
+.contact a:hover .upwork {
+    height: 160px;
+}
+
+.contact a p {
+    font-size: .1rem;
 }
