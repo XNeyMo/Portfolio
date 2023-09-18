@@ -28,6 +28,16 @@ body {
 
 /* =============== HEADER =============== */
 
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* =============== HEADER =============== */
+
 header {
     padding: 2rem 4rem;
     display: flex;
