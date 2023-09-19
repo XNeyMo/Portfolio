@@ -1,4 +1,9 @@
+/* =============== GOOGLE FONTS =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 /* =============== GLOBAL VARIABLES =============== */
+
 :root {
     --darkcolor: #121212;
     --intercolor: #fde68a;
@@ -8,6 +13,7 @@
 }
 
 /* =============== RESET CSS =============== */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,3 +41,22 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar {
     width: 0px;
 }
+
+/* =============== HEADER =============== */
+
+
+
+/* =============== HOME PAGE =============== */
+
+
+
+/* =============== ABOUT PAGE =============== */
+
+
+
+/* =============== PROJECT PAGE =============== */
+
+
+
+/* =============== CONTACT PAGE =============== */
+
