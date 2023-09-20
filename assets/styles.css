@@ -6,7 +6,7 @@
 
 :root {
     --darkcolor: #121212;
-    --intercolor: #fde68a;
+    --intercolor: #f9e57f;
     --lightcolor: #f8f8f8;
     --darkgray: #1e1e1f;
     --lightgray: #282829;
@@ -108,7 +108,59 @@ header {
 
 /* =============== HOME PAGE =============== */
 
+#home {
+    height: calc(100vh - 6rem - 24px);
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.home-content {
+    font-size: 1.8rem;
+}
+
+.home-content div {
+    margin: 3rem auto;
+}
+
+.name {
+    color: var(--intercolor);
+}
+
+.phrases {
+    background: linear-gradient(to right, var(--lightcolor), var(--intercolor));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.second {
+    margin-bottom: 5rem;
+}
+
+.contact-button {
+    font-weight: bold;
+    background-color: var(--darkcolor);
+    border: solid 1px var(--intercolor);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    transition: .5s;
+}
+
+.contact-button:hover {
+    background-color: var(--intercolor);
+    color: var(--darkcolor);
+}
+
+#home img {
+    width: 40rem;
+    border-radius: 50%;
+    border: solid 5px var(--intercolor);
+    -webkit-box-shadow: 0px 0px 55px 0px var(--intercolor);
+    -moz-box-shadow: 0px 0px 55px 0px var(--intercolor);
+    box-shadow: 0px 0px 55px 0px var(--intercolor);
+}
 
 /* =============== ABOUT PAGE =============== */
 
