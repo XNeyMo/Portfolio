@@ -9,6 +9,7 @@
     --intercolor: #f9e57f;
     --lightcolor: #f8f8f8;
     --gray1: #464545;
+    --gray2: #1f1f1f;
 }
 
 /* =============== RESET CSS =============== */
@@ -106,15 +107,27 @@ header {
 
 /* =============== ALL =============== */
 
+main {
+    padding: 0 8rem;
+}
+
 .text-for-a {
     font-size: 0rem;
+}
+
+.name {
+    color: var(--intercolor);
+}
+
+.photo {
+    width: 40rem;
+    border-radius: 50%;
 }
 
 /* =============== HOME PAGE =============== */
 
 #home {
     height: calc(100vh - 6rem - 24px);
-    padding: 0 8rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -126,10 +139,6 @@ header {
 
 .home-content div {
     margin: 3rem auto;
-}
-
-.name {
-    color: var(--intercolor);
 }
 
 .phrases {
@@ -158,8 +167,6 @@ header {
 }
 
 #home img {
-    width: 40rem;
-    border-radius: 50%;
     border: solid 5px var(--intercolor);
     -webkit-box-shadow: 0px 0px 55px 0px var(--intercolor);
     -moz-box-shadow: 0px 0px 55px 0px var(--intercolor);
@@ -168,7 +175,102 @@ header {
 
 /* =============== ABOUT PAGE =============== */
 
+#me {
+    background-color: var(--gray2);
+    border: solid 2px var(--gray1);
+    border-radius: 2rem;
+    padding: 4rem;
+    margin: 1rem 0;
+}
 
+#me h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.me-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+.me-content img {
+    width: 35rem;
+}
+
+.paragraphs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.paragraphs p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: .15rem;
+}
+
+#skills {
+    padding: 2rem 4rem;
+    margin: 1rem 0;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.nav-skills-bar {
+    margin: 4rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.skills-button {
+    background-color: var(--darkcolor);
+    border: none;
+    color: #9ba2ae;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.button-active {
+    background-color: #2a271e;
+    color: var(--intercolor);
+}
+
+.skills-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid .2rem var(--intercolor);
+    border-radius: .5rem;
+    width: 20rem;
+    height: 8rem;
+}
+
+.skill img {
+    width: 4rem;
+}
+
+.skill h3 {
+    font-size: 1.8rem;
+}
+
+#technologies {
+    display: none;
+}
 
 /* =============== PROJECT PAGE =============== */
 
