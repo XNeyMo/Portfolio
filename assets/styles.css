@@ -44,7 +44,67 @@ body::-webkit-scrollbar {
 
 /* =============== HEADER =============== */
 
+header {
+    padding: 3rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
 
+.logo p {
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.logo p span {
+    transition: .5s;
+    color: var(--intercolor);
+}
+
+.logo:hover p {
+    color: var(--intercolor);
+}
+
+.logo:hover p span {
+    color: var(--lightcolor);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.nav-links li:hover a {
+    color: var(--intercolor);
+}
+
+.github-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-brand svg path {
+    transition: .5s;
+}
+
+.github-brand:hover svg path {
+    fill: var(--intercolor);
+}
+
+/* =============== ALL =============== */
+
+.text-for-a {
+    font-size: 0rem;
+}
 
 /* =============== HOME PAGE =============== */
 
