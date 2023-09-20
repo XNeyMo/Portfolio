@@ -42,6 +42,25 @@ body::-webkit-scrollbar {
     width: 0px;
 }
 
+/* =============== ALL =============== */
+
+main {
+    padding: 0 8rem;
+}
+
+.text-for-a {
+    font-size: 0rem;
+}
+
+.name {
+    color: var(--intercolor);
+}
+
+.photo {
+    width: 40rem;
+    border-radius: 50%;
+}
+
 /* =============== HEADER =============== */
 
 header {
@@ -103,25 +122,6 @@ header {
 
 .github-brand:hover svg path {
     fill: var(--intercolor);
-}
-
-/* =============== ALL =============== */
-
-main {
-    padding: 0 8rem;
-}
-
-.text-for-a {
-    font-size: 0rem;
-}
-
-.name {
-    color: var(--intercolor);
-}
-
-.photo {
-    width: 40rem;
-    border-radius: 50%;
 }
 
 /* =============== HOME PAGE =============== */
@@ -274,7 +274,86 @@ main {
 
 /* =============== PROJECT PAGE =============== */
 
+#projects {
+    text-align: center;
+    font-size: 2rem;
+}
 
+.title h2 {
+    margin: 1rem 0;
+}
+
+.title p {
+    background: linear-gradient(to right, var(--lightcolor), var(--intercolor));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.projects-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(37rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.project {
+    width: 37rem;
+    background-color: var(--gray2);
+    border: solid 2px var(--gray1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project h3 {
+    margin: 2rem 0;
+}
+
+.project p {
+    font-size: 1.5rem;
+    text-align: start;
+    line-height: 2rem;
+    word-spacing: .2rem;
+    color: #b4b4b4;
+    margin-bottom: 2rem;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-info p {
+    color: var(--intercolor);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repository,
+.link {
+    transition: .5s;
+}
+
+.links a:hover .link {
+    stroke: var(--intercolor);
+}
+
+.links a:hover .repository {
+    fill: var(--intercolor);
+}
 
 /* =============== CONTACT PAGE =============== */
 
