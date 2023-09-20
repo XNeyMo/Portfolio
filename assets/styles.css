@@ -8,8 +8,7 @@
     --darkcolor: #121212;
     --intercolor: #f9e57f;
     --lightcolor: #f8f8f8;
-    --darkgray: #1e1e1f;
-    --lightgray: #282829;
+    --gray1: #464545;
 }
 
 /* =============== RESET CSS =============== */
@@ -80,10 +79,15 @@ header {
 .nav-links li a {
     font-size: 1.5rem;
     transition: .5s;
+    color: var(--gray1);
 }
 
 .nav-links li:hover a {
     color: var(--intercolor);
+}
+
+.active {
+    color: var(--intercolor) !important;
 }
 
 .github-brand {
