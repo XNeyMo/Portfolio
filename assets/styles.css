@@ -357,3 +357,87 @@ header {
 
 /* =============== CONTACT PAGE =============== */
 
+#contact {
+    margin: 2rem 0;
+    height: calc(100vh - 10rem - 24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 45rem;
+    height: 45rem;
+    border-top: solid 5px var(--intercolor);
+    border-left: solid 5px var(--intercolor);
+    border-bottom: solid 5px var(--intercolor);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea,
+button[type="submit"] {
+    background-color: var(--darkcolor);
+    border: solid 1px var(--intercolor);
+    width: 70%;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 2rem;
+}
+
+textarea {
+    margin-bottom: 6rem;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--intercolor);
+    color: var(--darkcolor);
+}
+
+.contact-links {
+    width: 45rem;
+    height: 45rem;
+    background-color: var(--intercolor);
+    color: var(--darkcolor);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: var(--darkcolor);
+}
+
+.c-links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
