@@ -528,11 +528,12 @@ footer {
 
 @media screen and (max-width: 390px) {
     main {
-        padding: 0 3.6rem;
+        padding: 0 3.7rem;
     }
 
     #home {
-        height: calc(100vh - 12rem - 42px);
+        height: auto;
+        margin: 4rem 0;
     }
 
     header {
@@ -553,6 +554,10 @@ footer {
     
     .home-content div h1 span.name {
         font-size: 4rem;
+    }
+
+    .home-content div h3 {
+        font-size: 1.8rem;
     }
 
     .me-content img {
@@ -582,8 +587,8 @@ footer {
     }
 
     #contact {
-        margin: 0;
-        height: calc(100vh - 12rem - 42px);
+        height: auto;
+        margin: 4rem 0;
     }
 
     form {
