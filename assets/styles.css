@@ -443,3 +443,86 @@ button[type="submit"]:hover {
 }
 
 /* =============== RESPONSIVE =============== */
+
+@media screen and (max-width: 900px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+      
+    #home img {
+        order: -1;
+        max-width: 100%;
+        height: auto;
+        margin-right: 20px;
+    }
+      
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .home-content div .name {
+        display: block;
+        font-size: 5rem;
+    }
+
+    .me-content {
+        flex-direction: column;
+    }
+
+    .paragraphs {
+        width: 100%;
+    }
+
+    .projects-grid {
+        grid-template-columns: auto;
+        gap: 4rem;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project h3 {
+        font-size: 4rem;
+    }
+
+    .project p {
+        font-size: 2rem;  
+        line-height: 2.5rem;
+        word-spacing: .25rem;      
+    }
+
+    .links a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    form {
+        width: 55rem;
+        height: 55rem;
+        border-right: solid 5px var(--intercolor);
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 2rem;
+    }
+
+    .contact-links {
+        width: 55rem;
+        height: 55rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2rem;
+    }
+}
