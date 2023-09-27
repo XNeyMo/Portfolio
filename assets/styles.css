@@ -602,6 +602,8 @@ footer {
     }
 
     footer {
+        position: sticky;
+        bottom: 0;
         display: block;
         padding: 3rem 3rem;
         background-color: var(--gray2);
