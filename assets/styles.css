@@ -602,12 +602,15 @@ footer {
     }
 
     footer {
-        position: sticky;
-        bottom: 0;
         display: block;
         padding: 3rem 3rem;
         background-color: var(--gray2);
+        margin: 0 2rem;
         border-top-right-radius: 2rem;
         border-top-left-radius: 2rem;
-    }  
+    }
+
+    .nav-links li a {
+        font-weight: bold;
+    }
 }
