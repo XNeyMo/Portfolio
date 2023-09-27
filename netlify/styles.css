@@ -416,23 +416,38 @@ button[type="submit"]:hover {
     color: var(--darkcolor);
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-}
-
-.c-links {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.contact-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
+.contact-links a {
+    padding: 2rem 4rem;
+    font-size: 3rem;
+    color: var(--darkcolor);
+    font-weight: bold;
+    border: solid 2px var(--darkcolor);
+    width: 50%;
+    text-align: center;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.linkedin:hover {
+    border: solid 2px #0a66c2;
+    color: #0a66c2;
+}
+
+.upwork:hover {
+    border: solid 2px #16a902;
+    color: #16a902;
+}
+
+.telegram:hover {
+    border: solid 2px #289fe0;
+    color: #289fe0;
 }
 
 /* =============== FOOTER NAV =============== */
@@ -526,13 +541,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
     main {
         padding: 0 3.7rem;
     }
 
     #home {
-        height: auto;
+        height: calc(100vh - 24rem - 1px);
         margin: 4rem 0;
     }
 
@@ -593,17 +608,25 @@ footer {
 
     form {
         width: 30rem;
-        height: 30rem;
+        height: 45rem;
     }
 
     .contact-links {
         width: 30rem;
-        height: 30rem;
+        height: 45rem;
+        gap: 2rem;
+    }
+
+    .contact-links a {
+        padding: 2rem 3rem;
+        font-size: 2rem;
+        width: 70%;
     }
 
     footer {
         display: block;
         padding: 3rem 3rem;
+        bottom: 0;
         background-color: var(--gray2);
         margin: 0 2rem;
         border-top-right-radius: 2rem;
